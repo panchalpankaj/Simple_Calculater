@@ -1,0 +1,53 @@
+<html>
+<head>
+       <title>Marksheet with Button</title>
+</head>
+<body>
+    <script>
+        function result()
+        {
+            f1.T7.value=eval(f1.T3.value)+eval(f1.T4.ve)+eval(f1.T5.value)+eval(f1.T6.value)
+            f1.T8.value=eval(f1.T7.value)/4
+        }
+    </script>
+    <form name="f1">
+        <div align="center">
+            <table border="1" width="26%">
+                <tr>
+                    <td width="18%">name</td>
+                    <td width="74%"><input type="text" name="T2" size="10"></td>
+                </tr>
+                <tr>
+                    <td width="18%">Eng</td>
+                    <td width="74%"><input type="text" name="T3" size="10"></td>
+                </tr>
+                <tr>
+                    <td width="18%">math</td>
+                    <td width="74%"><input type="text" name="T4" size="10"></td>
+                </tr>
+                <tr>
+                    <td width="18%">sci</td>
+                    <td width="74%"><input type="text" name="T5" size="10"></td>
+                </tr>
+                <tr>
+                    <td width="18%">comp</td>
+                    <td width="74%"><input type="text" name="T6" size="10"></td>
+                </tr>
+                <tr>
+                <td colspan="2">
+                    <p align="center"><input type="button" value="result" name="B3" onclick="result()"></p>
+                </td>
+                </tr>
+                <tr>
+                    <td width="18%">total</td>
+                    <td width="74%"><input type="text" name ="T7"size ="10"></td>
+                </tr>
+                <tr>
+                    <td width="18%">per</td>
+                    <td width="74%"><input type="text" name="T8" size="10"></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

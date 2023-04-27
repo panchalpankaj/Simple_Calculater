@@ -1,0 +1,43 @@
+<html>
+<head>
+       <title>Marksheet</title>
+       <script>
+            var no,name,math,sci,eng,com,tot,per;
+
+            no = prompt("Enter the No :");
+            document.write("No :"+no);
+            document.write("<br>");
+            
+            name = prompt("Enter the name :");
+            document.write("name :"+name);
+            document.write("<br>");
+            
+            math =  prompt("Enter the math marks :");
+            document.write("math :"+math);
+            document.write("<br>");
+            
+            sci = prompt("Enter the sci marks :");
+            document.write("sci :"+sci);
+            document.write("<br>");
+
+            eng = prompt("Enter the English marks :");
+            document.write("English :"+eng);
+            document.write("<br>");
+            
+            com = prompt("Enter the English marks :");
+            document.write("English :"+com);
+            document.write("<br>");
+            
+            tot = eval(math)+eval(sci)+eval(sci)+eval(eng)+eval(com);
+            document.write("Total is :"+tot);
+            document.write("<br>");
+            
+            per = eval(tot)/5; 
+            document.write("Percetage is :"+per);
+            document.write("<br>");
+       </script>
+</head>
+<body>
+    
+</body>
+</html>

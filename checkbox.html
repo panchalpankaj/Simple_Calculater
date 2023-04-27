@@ -1,0 +1,51 @@
+<html>
+<head>
+       <title>Document</title>
+</head>
+<body>
+    <script>
+        function green()
+        {
+            if(f1.C1.checked==true)
+            {
+                f1.document.bgColor="green"
+                f1.T1.value="green"
+            }
+            else
+            {
+                f1.document.bgColor="black"
+                f1.T1.value=""
+            }
+        }
+
+        function red()
+        {
+            if(f1.C2.checked==true)
+            {
+                f1.document.bgColor="red"
+                f1.T2.value="red"
+            }
+
+            else
+            {
+                f1.document.bgColor="black"
+                f1.T1.value=""
+            }
+        }
+    </script>
+    <form name="f1">
+        <div align="center">
+            <table border="1" width="24%">
+                <tr>
+                <td width="83"><input type="checkbox" name="C1" value="ON" onclick="green()">green</td>
+                <td><input type="text" name="T1" size="20"></td>
+                </tr>
+                <tr>
+                <td width="83"><input type="checkbox" name="C2" value="ON" onclick="red()">red</td>
+                <td><input type="text" name="T2" size="20"></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
